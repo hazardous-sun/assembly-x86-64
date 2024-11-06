@@ -9,6 +9,13 @@ section .data
         text db "Hello, World!", 10 ; passes "Hello, World!" plus the LF control char to a space of memory and sets 'text' as the reference to it
 
 section .text
+        /*
+        The word "global" is used when you want the linker to be able to know the address of some label.
+
+        The object file generated will contain a link to every label declared "global".
+
+        In this case, we have to declare "_start" as global, since it is required for the code to be properly linked.
+        */
         global _start
 
 /*
