@@ -11,6 +11,13 @@ section .data
 section .text
         global _start
 
+/*
+Assembly files also support "labels". A label is used to (guess one more time) LABEL a part of the code.
+
+Upon compilation, the compiler will calculate the location in which the label sit in memory.
+
+Any time the name of the label is used afterwards, that name is replaced by the location in memory by the compiler.
+*/
 _start:
         mov rax, 1    ; rax register informs which syscall to use, in this case, sys_write
         mov rdi, 1    ; rdi register informs which file descriptor to use, in this case, stdout
