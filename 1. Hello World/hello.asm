@@ -17,6 +17,12 @@ Assembly files also support "labels". A label is used to (guess one more time) L
 Upon compilation, the compiler will calculate the location in which the label sit in memory.
 
 Any time the name of the label is used afterwards, that name is replaced by the location in memory by the compiler.
+
+The "_start" label is the entry part of the code and is essential for all Assembly programs.
+
+When the code is compiled and later executed, it is executed first at the location of "_start".
+
+If the linker cannot find "_start", it will throw an error.
 */
 _start:
         mov rax, 1    ; rax register informs which syscall to use, in this case, sys_write
