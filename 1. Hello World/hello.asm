@@ -1,6 +1,6 @@
 
 section .data
-        text db "Hello, World!", 10
+        text db "Hello, World!", 10 ; passes "Hello, World!" plus the LF control char to a space of memory and sets 'text' as the reference to it
 
 section .text
         global _start
