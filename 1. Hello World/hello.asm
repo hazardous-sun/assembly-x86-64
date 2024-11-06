@@ -10,9 +10,9 @@ _start:
         mov rdi, 1    ; rdi register informs which file descriptor to use, in this case, stdout
         mov rsi, text ; rsi register informs which buffer to use, in this case, the 'text' memory address
         mov rdx, 14   ; rdx register informs the size of the buffer, in the case of "Hello, World!" + the LF control char, 14
-        syscall       ; finishes the descrition for the syscall 
+        syscall       ; finishes the description for the syscall 
 
         mov rax, 60   ; rax register once again informs which syscall to use, in this case, sys_exit
         mov rdi, 0    ; rdi informs the error code (by convention, 0 means there was no error)
-        syscall
+        syscall       ; finishes the description for the syscall
 
