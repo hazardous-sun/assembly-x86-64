@@ -28,13 +28,13 @@ _printRAXLoop:
         add rdx, 48
 
         mov rcx, [digitSpacePos]
-        mod [rcx], dl
+        mov [rcx], dl
         inc rcx 
         mov [digitSpacePos], rcx 
 
         pop rax 
         cmp rax, 0
-        jne, _printRAXLoop
+        jne _printRAXLoop
 
 _printRAXLoop2:
         mov rcx, [digitSpacePos]
