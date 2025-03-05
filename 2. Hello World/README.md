@@ -32,7 +32,6 @@ The ".text" section is where the actual code goes.
 - If the linker cannot find `_start`, it will throw an error.
 
 ---
-# Example Code
 
 ```asm
 section .data
