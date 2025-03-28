@@ -1,4 +1,6 @@
-
+/*
+All x86_64 assembly files have three sections, the ".data" section, the ".bss" section, and the ".text" section.
+*/
 section .data
         text db "Hello, World!", 10 ; passes "Hello, World!" plus the LF control char to a space of memory and sets 'text' as the reference to it
 
