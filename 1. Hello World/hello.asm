@@ -13,6 +13,6 @@ _start:
         syscall       ; finishes the descrition for the syscall 
 
         mov rax, 60   ; rax register once again informs which syscall to use, in this case, sys_exit
-        mov rdi, 0    ; 
+        mov rdi, 0    ; rdi informs the error code (by convention, 0 means there was no error)
         syscall
 
