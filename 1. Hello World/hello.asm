@@ -1,5 +1,9 @@
 /*
 All x86_64 assembly files have three sections, the ".data" section, the ".bss" section, and the ".text" section.
+
+  1. The ".data" is the section of all the (guess what) DATA of the application is defined befor compilation.
+  2. The ".bss" section is where data is allocated for future use
+  3. The ".text" section is where the actual code goes.
 */
 section .data
         text db "Hello, World!", 10 ; passes "Hello, World!" plus the LF control char to a space of memory and sets 'text' as the reference to it
